@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sofia", sans-serif;
+}
+
+.mar-20 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger-link {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-lists {
+  display: flex;
+  color: black;
+  list-style-type: none;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+}
+
+.nav-lists a {
+  text-decoration:none;
+  color: black;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+/* .hamburger-link {
+  display: none;
+} */
+
+
+.header-image {
+  max-width: 50%;
+  height: auto;
+}
+
+
+
+
+.hero-section {
+  height: 35vh;
+  max-height: 500px;
+  background-color: #495e57;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hero-info {
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.hero-image {
+  position: absolute;
+
+  top: 40px;
+  right: 20%;
+  border-radius: 10px;
+}
+
+.hero-title {
+  color: #c5a60e;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.hero-info {
+  color: white;
+}
+
+.hero-location {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.hero-button {
+  background-color: #f4ce14;
+  border-radius: 10px;
+  height: 33px;
+  width: 150px;
+  margin-top: 20px;
+  font-weight: bold;
+  border: 0;
+  text-decoration:none;
+  color: black;
+}
+
+.hero-button a {
+  text-decoration:none;
+  color: black;
+}
+
+.orderpage{
+  height: 90vh;
+  background-image: url("./icons_assets/peakpx.jpg");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.order-heading-section {
+  margin-left: 20%;
+  margin-top: 300px;
+  color: white;
+  font-size: 25px;
+}
+
+.form-section {
+  margin-top: 50px;
+  margin-right: 40px;
+  color: black;
+  background-color: white;
+  opacity: 1;
+  height: 75vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+
+
+.form-section input, select {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #f4ce14;
+
+}
+
+.sssppp {
+  height: 100vh;
+  background-color: #f4ce14;
+}
+
+
+.confirmation {
+  padding-top: 30vh;
+  margin-left: 35vw;
+  margin-right: 30vw;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+main {
+
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.special {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about_us {
+  text-align: center;
+  background-color: yellow;
+  height: 300px;
+  font-size: 50px;
+  padding-top: 120px;
+}
+
+
+.card-image {
+  width: 100%;
+  height: 190px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.special-heading {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.special-btn {
+  height: 40px;
+  margin-right: 3px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #edefee;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+div.card:nth-child(3) {
+  margin-right: 0;
+}
+
+.card-special {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price {
+  color: #ee9b75;
+}
+
+
+.card p {
+  padding: 10px;
+}
+
+.card-title, .card-delivery {
+  font-weight: bold;
+}
+
+
+@media screen and (max-width:600px) {
+
+  .mar-20 {
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+
+
+  .card {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .hero-image {
+      display: none;
+  }
+
+  .header-image {
+      height: 30px;
+      margin-left: 20%;
+      margin-right: 20%;
+  }
+
+
+  .hero-info {
+      width: 100%;
+      height: 50vh;
+      margin-right: 50px;
+  }
+
+  .special {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+  }
+
+  .nav-lists.visible {
+      flex-direction: column;
+      position: absolute;
+      top: 90px;
+      right: 0;
+      width: 100%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+      z-index: 1000;
+  }
+
+
+  .hamburger-link {
+    margin-right: 20px;
+    display: block;
+    z-index: 50000;
+  }
+
+  .nav-lists {
+    display: none;
+  }
+
+  .orderpage {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+  }
+
+  .order-heading-section {
+    margin-top: 50px;
+    font-size: 10px;
+  }
+
+  .form-section {
+    width: 100%;
+  }
+
+
+}
+
+
